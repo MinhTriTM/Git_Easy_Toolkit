@@ -107,3 +107,4 @@ Dự án này được phân phối dưới giấy phép MIT. Xem file [LICENSE]
 
 ---
 *Được phát triển với ❤️ nhằm mang lại trải nghiệm Git thân thiện nhất cho mọi người.*
+# Git_Easy_Toolkit
