@@ -1,2 +1,2 @@
 @echo off
-call "%~dp0git_run\Run_Windows.bat" %*
+call "C:\tools\git_run\Run_Windows.bat" %*

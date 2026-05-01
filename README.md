@@ -45,9 +45,19 @@
    ```
 
 2. **(Tùy chọn) Cài đặt lệnh `gitt` toàn cầu trên Windows:**
-   - Copy file `gitt.bat` ở thư mục gốc.
-   - Dán vào `C:\Windows`. 
-   - Từ giờ, ở bất kỳ thư mục nào mở CMD, bạn chỉ cần gõ `gitt` là công cụ sẽ khởi chạy!
+   
+   **Cách 1 (Nhanh nhất):**
+   - Copy file `gitt.bat` ở thư mục gốc và dán thẳng vào `C:\Windows`.
+   - Hoặc mở PowerShell bằng quyền **Admin** và chạy: `Copy-Item -Path "gitt.bat" -Destination "C:\Windows\gitt.bat" -Force`
+   
+   **Cách 2 (Khuyên dùng): Thêm vào biến môi trường PATH**
+   - Mở Start Menu, gõ **Environment Variables** -> Chọn *Edit the system environment variables*.
+   - Nhấn nút **Environment Variables...**.
+   - Trong bảng *User variables*, tìm và click đúp vào dòng **Path**.
+   - Nhấn **New** và dán đường dẫn thư mục chứa tool này (ví dụ: `C:\tools\git_run`).
+   - Nhấn **OK** để lưu lại và khởi động lại Terminal/PowerShell.
+
+   > ⚠️ **Lưu ý quan trọng:** Không sử dụng đường dẫn tương đối (ví dụ: `..\..\Windows\gitt.bat`) khi copy thủ công hoặc thiết lập alias để tránh lỗi "not recognized" khi bạn thực thi lệnh ở các phân vùng ổ đĩa khác nhau (như ổ D:, E:). Từ giờ trở đi, bạn chỉ cần gõ lệnh `gitt` ở bất kỳ đâu là công cụ sẽ chạy!
 
 ---
 
